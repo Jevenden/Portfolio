@@ -7,11 +7,44 @@
 header {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkblue;
+    background-color: rgb(28, 139, 177);
     color: white;
+    position: sticky;
+    top: 0px;
 }   
 
 header h1 {
     display: flex;
-    -ms-flex-align: left;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: rgb(28, 139, 177);
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-flex;
+    margin-left: 135px;
+    padding-top: 25px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    color: white;
 }
