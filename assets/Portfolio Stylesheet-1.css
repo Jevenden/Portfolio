@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    padding: 15px;
+    background-color: rgb(28, 139, 177);
+    color: white;
+    position: sticky;
+    top: 0px;
+}   
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-flex;
+    margin-left: 225px;
+    padding-top: 25px;
+}
+
+.hero {
+    height: 200px;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero p {
+    background-color: rgb(28, 139, 177);
+    width: 235px;
+    height: 25px;
+    padding-top: 2px;
+    float: left;
+    margin-top: 90px;
+    color: white;
+    font-size: larger;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: rgba(28, 139, 177, 0.3);
+}
+
+#about-me {
+    display: inline-flex;
+}
+
+#about-me h2 {
+    font-size: xx-large;
+    display: flex;
+    border-right: 5px solid rgb(28, 139, 177);
+    width: 150px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-right: 10px;
+}
+
+#about-me p {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 100px;
+}
