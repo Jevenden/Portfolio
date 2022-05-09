@@ -5,7 +5,16 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+main {
+    display: inline-block;
+    background-color: rgba(28, 139, 177, 0.3);
+}
+
 a:hover {
+    opacity: 0.8;
+}
+
+img:hover{
     opacity: 0.5;
 }
 
@@ -15,13 +24,15 @@ header {
     top: 0px;
     flex-wrap: wrap;
     z-index: 1;
+    position: sticky;
+    height: 50px;
+    padding-top: 10px;
 }   
 
 header h2 {
     display: flex;
     justify-content: center;
     color: whitesmoke;
-    height: fit-content;
 }
 
 nav {
@@ -69,21 +80,17 @@ a {
     text-decoration: none;
 }
 
-main {
-    background-color: rgba(28, 139, 177, 0.3);
-}
-
 #about-me {
     display: inline-flex;
 }
 
-#about-me h2 {
+#about-me h3 {
     font-size: xx-large;
     display: flex;
     border-right: 5px solid rgb(28, 139, 177);
-    width: 150px;
+    width: 50px;
     padding-bottom: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 50px;
     padding-right: 10px;
 }
@@ -92,42 +99,6 @@ main {
     padding-top: 50px;
     padding-left: 10px;
     padding-right: 100px;
-}
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-header {
-    padding: 15px;
-    background-color: rgb(28, 139, 177);
-    color: white;
-    position: sticky;
-    top: 0px;
-}   
-
-header h1 {
-    display: flex;
-    justify-content: center;
-    color: whitesmoke;
-}
-
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    font-size: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-flex;
-    margin-left: 225px;
-    padding-top: 25px;
 }
 
 .hero {
@@ -160,9 +131,10 @@ main {
 
 #about-me {
     display: inline-flex;
+    padding-top: 5px;
 }
 
-#about-me h2 {
+#about-me h3 {
     font-size: xx-large;
     display: flex;
     border-right: 5px solid rgb(28, 139, 177);
@@ -180,20 +152,28 @@ main {
 }
 
 #work {
-    display: inline-flex;
+    display: flex;
     position: static;
+    padding-top: 5px;
 }
 
-#work h2 {
+#work h3 {
     font-size: xx-large;
     float: left;
     border-right: 5px solid rgb(28, 139, 177);
     width: 103px;
-    height: 1000px;
+    height: 600px;
     padding-bottom: 50px;
     margin-left: 100px;
     margin-top: 50px;
     display: inline-block;
+}
+
+.horiseon {
+    position: relative;
+    text-align: center;
+    color: white;
+    left: 50px;
 }
 
 #primary-work {
@@ -201,14 +181,13 @@ main {
     border-radius: 8px;
     height: 600px;
     width: 900px;
-    margin-left: 110px;
-    margin-top: 50px;
-    border-radius: 8px;
-    position: absolute;
+    left: 110px;
+    top: 50px;
+    position: relative;
 }
 
 .primary-text {
-    position: relative;
+    position: absolute;
     z-index: 1;
     top: 550px;
     left: 130px;
@@ -220,22 +199,128 @@ main {
     height: fit-content;
 }
 
-#secondary-work {
+#more {
     display: flex;
+    position: static;
+    padding-top: 5px;
+}
+
+#more h3 {
+    font-size: xx-large;
+    float: left;
+    border-right: 5px solid rgb(28, 139, 177);
+    width: 103px;
     height: 200px;
-    width: 300px;
-    position: absolute;
-    top: 1175px;
-    left: 330px;
-    border-radius: 8px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.secondary {
+    position: relative;
+    text-align: center;
+    color: white;
+    left: 50px;
 }
 
 #secondary-work {
     display: flex;
-    height: 200px;
-    width: 300px;
-    position: absolute;
-    top: 1175px;
-    left: 330px;
     border-radius: 8px;
+    height: 200px;
+    width: 290px;
+    left: 110px;
+    top: 50px;
+    position: relative;
+}
+
+.secondary-text {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(28, 139, 177);
+    color: white;
+    width: fit-content;
+    border-radius: 8px;
+    height: fit-content;
+    left: 130px;
+    bottom: 20px;
+}
+
+.tertiary {
+    position: relative;
+    text-align: center;
+    color: white;
+    left: 50px;
+    margin-left: 15px;
+}
+
+#tertiary-work {
+    display: flex;
+    border-radius: 8px;
+    height: 200px;
+    width: 290px;
+    left: 110px;
+    top: 50px;
+    position: relative;
+}
+
+.tertiary-text {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(28, 139, 177);
+    color: white;
+    width: fit-content;
+    border-radius: 8px;
+    height: fit-content;
+    left: 130px;
+    bottom: 20px;
+}
+
+.quarternary {
+    position: relative;
+    text-align: center;
+    color: white;
+    left: 50px;
+    margin-left: 15px;
+}
+
+#quarternary-work {
+    display: flex;
+    border-radius: 8px;
+    height: 200px;
+    width: 290px;
+    left: 110px;
+    top: 50px;
+    position: relative;
+}
+
+.quarternary-text {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(28, 139, 177);
+    color: white;
+    width: fit-content;
+    border-radius: 8px;
+    height: fit-content;
+    left: 130px;
+    bottom: 20px;
+}
+
+#contact-me {
+    display: flex;
+    position: static;
+    padding-top: 5px;
+}
+
+#contact-me h3 {
+    font-size: xx-large;
+    float: left;
+    border-right: 5px solid rgb(28, 139, 177);
+    width: 103px;
+    height: 100px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
