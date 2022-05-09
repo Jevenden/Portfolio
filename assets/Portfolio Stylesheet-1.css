@@ -83,3 +83,15 @@ main {
     padding-left: 10px;
     padding-right: 100px;
 }
+
+#work h2 {
+    font-size: xx-large;
+    display: flex;
+    border-right: 5px solid rgb(28, 139, 177);
+    width: 103px;
+    height: 600px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
