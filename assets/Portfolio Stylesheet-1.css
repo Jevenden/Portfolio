@@ -5,6 +5,101 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+a:hover {
+    opacity: 0.5;
+}
+
+header {
+    background-color: rgb(28, 139, 177);
+    color: white;
+    top: 0px;
+    flex-wrap: wrap;
+    z-index: 1;
+}   
+
+header h2 {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    height: fit-content;
+}
+
+nav {
+    margin-right: 20px;
+    font-size: 20px;
+    background-color: rgb(28, 139, 177);
+    color: white;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-left: 225px;
+    padding-top: 25px;
+}
+
+.hero {
+    height: 200px;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero p {
+    background-color: rgb(28, 139, 177);
+    width: 235px;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 5px;
+    float: left;
+    margin-top: 90px;
+    color: white;
+    font-size: larger;
+    border-radius: 8px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: rgba(28, 139, 177, 0.3);
+}
+
+#about-me {
+    display: inline-flex;
+}
+
+#about-me h2 {
+    font-size: xx-large;
+    display: flex;
+    border-right: 5px solid rgb(28, 139, 177);
+    width: 150px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-right: 10px;
+}
+
+#about-me p {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 header {
     padding: 15px;
     background-color: rgb(28, 139, 177);
@@ -84,14 +179,63 @@ main {
     padding-right: 100px;
 }
 
+#work {
+    display: inline-flex;
+    position: static;
+}
+
 #work h2 {
     font-size: xx-large;
-    display: flex;
+    float: left;
     border-right: 5px solid rgb(28, 139, 177);
     width: 103px;
-    height: 600px;
+    height: 1000px;
     padding-bottom: 50px;
     margin-left: 100px;
     margin-top: 50px;
+    display: inline-block;
+}
 
+#primary-work {
+    display: flex;
+    border-radius: 8px;
+    height: 600px;
+    width: 900px;
+    margin-left: 110px;
+    margin-top: 50px;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.primary-text {
+    position: relative;
+    z-index: 1;
+    top: 550px;
+    left: 130px;
+    background-color: rgb(28, 139, 177);
+    color: white;
+    font-size: xx-large;
+    width: fit-content;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+#secondary-work {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 1175px;
+    left: 330px;
+    border-radius: 8px;
+}
+
+#secondary-work {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 1175px;
+    left: 330px;
+    border-radius: 8px;
 }
