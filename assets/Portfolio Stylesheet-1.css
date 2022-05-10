@@ -6,6 +6,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 a:hover {
     opacity: 0.8;
 }
@@ -14,15 +19,10 @@ img:hover{
     opacity: 0.5;
 }
 
+/* Main */
 main {
     display: inline-block;
     background-color: rgba(28, 139, 177, 0.3);
-    overflow-x: hidden;
-}
-
-a {
-    color: white;
-    text-decoration: none;
 }
 
 /* Header */
@@ -43,7 +43,7 @@ header h2 {
     color: whitesmoke;
 }
 
-/* Nav Bar */
+/* Navigation */
 nav {
     margin-right: 20px;
     font-size: 20px;
@@ -63,7 +63,7 @@ nav ul li {
     padding-top: 25px;
 }
 
-/* Hero Image */
+/* Hero */
 .hero {
     height: 200px;
     width: 100%;
@@ -85,18 +85,19 @@ nav ul li {
     border-radius: 8px;
 }
 
-/* About Me */
+/* About-Me */
 #about-me {
     display: inline-flex;
+    padding-top: 5px;
 }
 
 #about-me h3 {
     font-size: xx-large;
     display: flex;
     border-right: 5px solid rgb(28, 139, 177);
-    width: 50px;
+    width: 150px;
     padding-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: 50px;
     padding-right: 10px;
 }
@@ -105,11 +106,6 @@ nav ul li {
     padding-top: 50px;
     padding-left: 10px;
     padding-right: 100px;
-}
-
-#about-me {
-    display: inline-flex;
-    padding-top: 5px;
 }
 
 /* Work */
@@ -130,6 +126,7 @@ nav ul li {
     margin-top: 50px;
 }
 
+/* Primary Image and Text */
 .horiseon {
     position: relative;
     text-align: center;
@@ -145,7 +142,6 @@ nav ul li {
     left: 110px;
     top: 50px;
     position: relative;
-    margin: none;
 }
 
 .primary-text {
@@ -179,7 +175,7 @@ nav ul li {
     margin-top: 50px;
 }
 
-/* More Work Images */
+/* More Work Images and Titles */
 .secondary {
     position: relative;
     text-align: center;
