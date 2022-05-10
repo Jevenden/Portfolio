@@ -166,7 +166,6 @@ main {
     padding-bottom: 50px;
     margin-left: 100px;
     margin-top: 50px;
-    display: inline-block;
 }
 
 .horiseon {
@@ -214,7 +213,6 @@ main {
     padding-bottom: 50px;
     margin-left: 100px;
     margin-top: 50px;
-    display: inline-block;
 }
 
 .secondary {
@@ -321,6 +319,34 @@ main {
     padding-bottom: 50px;
     margin-left: 100px;
     margin-top: 50px;
-    display: inline-block;
     margin-bottom: 10px;
+}
+
+#contact-me p {
+    margin-top: 85px;
+    margin-left: 110px;
+    font-size: larger;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#contact-me a {
+    color: rgb(28, 139, 177);
+}
+
+footer {
+    background-color: rgb(28, 139, 177);
+    color: white;
+    bottom: 0px;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: sticky;
+    height: 50px;
+    padding-top: 10px;
+}
+
+footer h3 {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
 }
